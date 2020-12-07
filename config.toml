@@ -1,0 +1,99 @@
+baseurl = "https://williamgavidia.github.io" # Hostname (and path) to the root.
+title = "Sasuke" # Site title.
+theme = "coder-portfolio" # Set the theme.
+languagecode = "es" # The site’s language code used to generate RSS.
+defaultcontentlanguage = "es" # The default content language.
+cleanDestinationDir = true
+
+paginate = 20 # Default number of pages per page in pagination.
+
+disqusShortname = "williamgavidia" # Enable or disable Disqus.
+
+[params] # theme parameters
+    author = "Wuilliam Gavidia" # Author's name.  info = "Ing. en Informatica" # Author's job title or info.
+    description = "Un Espacio abierto e interactivo, dedicado a la tecnologia" # Site description.
+    keywords = "blog,developer,personal" # Site keywords.
+    avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
+
+    footercontent = "Copyright © Wuilliam Gavidia 2020." # Add footer content
+    fixedbarContent = "¿Quieres mostrar el contenido privado? → " # Add fixedbar content
+    fixedbarContentAfter = "Ya estás viendo el contenido privado" # Add fixedbar content after click
+
+    # Whether you want to hide copyright and credits in the footer.
+    hideCredits = false
+    hideCopyright = true
+
+    # Custom CSS
+    custom_css = ["custom.css"]
+
+    # Alignment of Mobile Menu items
+    itemscentered = true
+
+    # RTL support
+    rtl = false
+
+    # Bottom sns share
+    snsShare = true # new add
+    # Popular sns share
+    # if you want add sns. please message!
+    enableTwitterShare = true  # new add
+    enableFacebookShare = true # new add
+    enableLinkedInShare = true # new add
+
+    thumbnail = "images/tn.png" # default sns thumbnail
+
+    # Multilanguage mode
+    langseparator = "|" # Separates menus from language selectors when site is multilingual.
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/williamgavidia/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 2
+    url = "https://twitter.com/Wzerpa_g/"
+[[params.social]]
+    name = "Facebook"
+    icon = "fab fa-facebook"
+    weight = 3
+    url = "https://www.facebook.com/wgavidia/"
+[[params.social]]
+    # If icon is not set, Text is displayed.
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 4
+    url = "https://linkedin.com/in/williamgavidia/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Menu links
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "blog"
+[[menu.main]]
+    name = "Proyectos"
+    weight = 2
+    url  = "proyectos"
+[[menu.main]]
+    name = "About"
+    weight = 3
+    url = "about"
+
+[markup.highlight]
+  codeFences = true
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = false
+  tabWidth = 2
+[markup.tableOfContents]
+  startLevel = 1
+  endLevel = 6
